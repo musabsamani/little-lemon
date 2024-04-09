@@ -1,6 +1,6 @@
 import Styles from "./specials.module.scss";
 import Button from "../include/Button";
-import SpecialsCard from "../include/cards/specialsCard";
+import SpecialsCard from "../include/cards/SpecialsCard";
 let specials = [
   {
     img: "greek salad.jpg",

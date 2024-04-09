@@ -1,0 +1,26 @@
+.reservation {
+  background-color: var(--primary-color1);
+  .container {
+    display: block;
+    .intro {
+      h1 {
+        margin-bottom: 0;
+        color: var(--primary-color2);
+      }
+      h2 {
+        color: #fff;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: inherit;
+    color: var(--highlight-color2);
+    text-transform: lowercase;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

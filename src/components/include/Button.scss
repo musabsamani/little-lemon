@@ -1,0 +1,17 @@
+.button {
+  color: var(--primary-color1);
+  background-color: var(--primary-color2);
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  font-size: 18pt;
+  padding: 8pt 16pt;
+  border-radius: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: var(--primary-color2);
+    background-color: transparent;
+    border: 1px solid var(--primary-color2);
+  }
+}

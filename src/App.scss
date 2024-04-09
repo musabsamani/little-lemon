@@ -1,0 +1,77 @@
+:root {
+  scroll-behavior: smooth;
+  --primary-color1: #495e57;
+  --primary-color2: #f4ce14;
+  --secondary-color1: #ee9972;
+  --secondary-color2: #fadabb;
+  --highlight-color1: #edefee;
+  --highlight-color2: #333333;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  text-transform: capitalize;
+}
+h1 {
+  color: var(--highlight-color2);
+  font-size: 40pt;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 18pt;
+}
+p {
+  max-width: 56ch;
+  word-wrap: break-word;
+}
+img {
+  width: 100%;
+}
+section {
+  padding: 100px 0;
+}
+[class^="_container"] {
+  padding: 0 30px;
+  margin: auto;
+}
+[class^="_card"] {
+  border-radius: 5pt;
+  max-width: 300px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+.none {
+  display: none;
+}
+
+@media (max-width: 675px) {
+  [class^="_container"] {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  [class^="_container"] {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (min-width: 992px) {
+  [class^="_container"] {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  [class^="_container"] {
+    max-width: 1140px;
+  }
+}

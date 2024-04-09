@@ -1,0 +1,28 @@
+.card {
+  padding: 20px;
+  background-color: #fff;
+  .rating {
+    img {
+      width: 15px;
+      margin-bottom: 10px;
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    & > img {
+      width: 100px;
+    }
+  }
+  q {
+    display: block;
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--highlight-color2);
+  }
+}

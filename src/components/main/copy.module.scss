@@ -1,0 +1,28 @@
+.copy {
+  padding: 40px 0;
+  background-color: var(--highlight-color2);
+  .container {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--highlight-color1);
+    span {
+      font-weight: bold;
+      font-size: 20px;
+      color: var(--primary-color1);
+      transition: color 0.3s;
+      &:hover {
+        color: red;
+      }
+    }
+    a {
+      transition: color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--highlight-color1);
+      font-weight: bold;
+      &:hover {
+        color: var(--primary-color1);
+      }
+    }
+  }
+}

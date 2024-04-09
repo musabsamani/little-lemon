@@ -1,0 +1,42 @@
+.about .container .row {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  .info {
+    width: calc(100% - 400px);
+    h2 {
+      color: var(--primary-color1);
+    }
+    display: block;
+    p {
+      margin: 50px 0 0;
+      color: var(--highlight-color2);
+    }
+  }
+  .img {
+    width: 400px;
+    height: 410px;
+    position: relative;
+    img {
+      top: 50px;
+      width: 200px;
+      display: block;
+      position: relative;
+      &:last-of-type {
+        position: absolute;
+        left: 150px;
+        top: 0px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .about .container .row {
+    gap: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .info {
+      width: 400px;
+    }
+  }
+}

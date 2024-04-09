@@ -1,0 +1,40 @@
+.specials {
+  .container {
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .info {
+      gap: 30px;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+    }
+  }
+}
+@keyframes delivery {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+@media (max-width: 675px) {
+  .specials .container {
+    .intro {
+      flex-direction: column;
+      button {
+        margin: 25px 0 50px;
+      }
+    }
+    .info {
+      gap: 100px;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

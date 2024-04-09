@@ -1,0 +1,109 @@
+.formPage1 {
+  .intro {
+    p {
+      color: #fff;
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+    & > .row {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      img {
+        max-width: 400px;
+        width: calc(50% - 15px);
+      }
+    }
+  }
+  .form > .row {
+    &:first-of-type {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      label {
+        padding-bottom: 20px;
+        position: relative;
+        &:has(select[name="date"]),
+        &:has(select[name="time"]) {
+          width: calc(50% - 5px);
+        }
+        &:has(select[name="numberOfDiners"]),
+        &:has(select[name="occasion"]) {
+          width: 100%;
+        }
+        &:has(select[requiredd="true"]) {
+          &::before {
+            content: "*";
+            display: block;
+            color: red;
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            top: 3px;
+            left: 5px;
+          }
+        }
+        select {
+          width: 100%;
+          outline: none;
+          padding: 6px 10px;
+          text-transform: capitalize;
+        }
+        span {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: #f99;
+        }
+      }
+    }
+    &:last-of-type {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      p {
+        max-width: initial;
+        width: 100%;
+        color: #fff;
+        margin: 0;
+        &::first-letter {
+          text-transform: capitalize;
+        }
+      }
+      & > .row {
+        width: 100%;
+        label {
+          display: flex;
+          justify-content: space-between;
+          color: var(--highlight-color1);
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .formPage1 .form > .row {
+    &:first-child {
+      label:has(select[name="date"]),
+      label:has(select[name="time"]),
+      label:has(select[name="numberOfDiners"]),
+      label:has(select[name="occasion"]) {
+        width: calc(50% - 5px);
+      }
+    }
+    &:last-of-type {
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      p {
+        width: calc(50% - 5px);
+      }
+      .row {
+        width: calc(50% - 5px);
+      }
+    }
+  }
+}

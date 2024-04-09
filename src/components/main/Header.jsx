@@ -39,8 +39,8 @@ const Header = () => {
                     </div>
                     <ul ref={targetElement} className={isVisibleMenu ? "visible" : ""}>
                         <li><Link to="/">Home</Link></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#specials">menu</a></li>
+                        <li><a href="/#about">about</a></li>
+                        <li><a href="/#specials">menu</a></li>
                         <li><Link to="/reservation">reservation</Link></li>
                         <li><a href="#">order online</a></li>
                         <li><Link to="/login">login</Link></li>

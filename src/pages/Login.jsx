@@ -1,10 +1,9 @@
-import React from 'react';
-
+import "./login.module.scss"
 const Login = () => {
     return (
-        <div>
+        <h1>
             login
-        </div>
+        </h1>
     );
 }
 

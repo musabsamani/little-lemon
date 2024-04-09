@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
-import Styles from "./FormPage2.module.scss"
+import Styles from "./formPage2.module.scss"
 
 import FormPage2Input from '../include/form/FormPage2Input';
 import Button from '../include/Button';
